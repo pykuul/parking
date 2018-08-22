@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TIS Parking Management Software</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImport"/>
+    <addaction name="separator"/>
+    <addaction name="actionExport"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuCard">
+    <property name="title">
+     <string>Thẻ</string>
+    </property>
+    <addaction name="actionAdd_Card"/>
+    <addaction name="separator"/>
+    <addaction name="actionModify_Card"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_Card"/>
+   </widget>
+   <widget class="QMenu" name="menuReport">
+    <property name="title">
+     <string>Báo cáo</string>
+    </property>
+    <addaction name="actionIncome"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Cài đặt</string>
+    </property>
+    <addaction name="actionPort_Setting"/>
+   </widget>
+   <widget class="QMenu" name="menuUser">
+    <property name="title">
+     <string>Người dùng</string>
+    </property>
+    <addaction name="actionAdd_User"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_User"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Hướng dẫn</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuUser"/>
+   <addaction name="menuCard"/>
+   <addaction name="menuReport"/>
+   <addaction name="menuSetting"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_Card">
+   <property name="text">
+    <string>Thêm thẻ</string>
+   </property>
+   <property name="toolTip">
+    <string>Thêm thẻ vào hệ thống</string>
+   </property>
+  </action>
+  <action name="actionDelete_Card">
+   <property name="text">
+    <string>Xóa thẻ</string>
+   </property>
+   <property name="toolTip">
+    <string>Xóa thẻ khỏi hệ thống</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Xuất File</string>
+   </property>
+   <property name="toolTip">
+    <string>Xuất dữ liệu ra file excel hoặc file csv</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Nhập File</string>
+   </property>
+   <property name="toolTip">
+    <string>Nhập Dữ liệu từ file excel hoặc csv </string>
+   </property>
+  </action>
+  <action name="actionIncome">
+   <property name="text">
+    <string>Doanh Thu</string>
+   </property>
+   <property name="toolTip">
+    <string>Báo cáo doanh Thu</string>
+   </property>
+  </action>
+  <action name="actionPort_Setting">
+   <property name="text">
+    <string>Cài đặt cổng COM</string>
+   </property>
+  </action>
+  <action name="actionModify_Card">
+   <property name="text">
+    <string>Sửa thẻ</string>
+   </property>
+   <property name="toolTip">
+    <string>Sửa thông tin thẻ có trong hệ thống</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Tắt</string>
+   </property>
+   <property name="toolTip">
+    <string>Tắt chương trình</string>
+   </property>
+  </action>
+  <action name="actionAdd_User">
+   <property name="text">
+    <string>Thêm User</string>
+   </property>
+   <property name="toolTip">
+    <string>Thêm Người dùng vào hệ thống</string>
+   </property>
+  </action>
+  <action name="actionDelete_User">
+   <property name="text">
+    <string>Xóa User</string>
+   </property>
+   <property name="toolTip">
+    <string>Xóa người dùng đã tồn tại trong hệ thống</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
